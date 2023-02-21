@@ -1,6 +1,6 @@
 package org.example;
-
 import java.util.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +16,8 @@ public class Main {
 
         System.out.println("\n\nМетод для заполнения HashMap и вывода только четных значений");
         createAndCheckHashMap();
+
+
     }
     public static void firstSimpleTasks() {
         // вывести в консоль hello world
@@ -86,11 +88,7 @@ public class Main {
     }
     // Написать метод которые принимает строку и возвращает true если длинна строки больше 5 символов, иначе false
     public static boolean checkStringLength(String[] inputString) {
-        final int LENGTH_THRESHOLD = 5;
-        if (inputString.length > LENGTH_THRESHOLD) {
-            return true;
-        }
-        return false;
+        return inputString.length > 5;
     }
 
     // Написать метод который принимает int если значение в диапазоне от 1 до 100 то выводит в консоль это число,
